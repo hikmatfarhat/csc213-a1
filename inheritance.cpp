@@ -14,6 +14,8 @@ int main()
 {
 	Classroom s108("S108", 108, "FNAS", 40);
 	Office s311("S311", 311, "FNAS", "Hikmat Farhat");
+	std::cout<<s108.print()<<std::endl;
+        std::cout<<s311.print()<<std::endl; 
 	print(s108);
 	print(s311);
 }

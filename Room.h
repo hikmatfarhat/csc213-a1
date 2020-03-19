@@ -62,28 +62,14 @@ public:
 // you have to add
 // function:print ->   bldg name . Example  name=311, Bld=FNAS,   output FNAS 311
 
-class Classroom : public Room {
-	int capacity;
-public:
-	Classroom(std::string n, int i, std::string b, int c) :Room(n, i, b), capacity(c) {}
-	 std::string print() const {
-		return Room::print() + "-" + std::to_string(capacity);
-	}
-};
 
 // you have to add
 // Classrom inherits from Room
 //in addition has members:
 // variable: capacity -> int
 // function: print -> bldg name-capacity. Example name=108, Bldg=FNAS, capacity=30, output FNAS 108-30
-class Office :public Room {
-	std::string occupant;
-public:
-	Office(std::string n, int i, std::string b, std::string o) :Room(n, i, b), occupant(o) {}
-	std::string print() const {
-		return Room::print() + "-" + occupant;
-	}
-};
+
+
 // you have to add
 //Office inherits from Room
 //in addition has members:
